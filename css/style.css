@@ -39,7 +39,7 @@ ul {
 }
 
 .container {
-  width: 1158px;
+  max-width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -73,7 +73,6 @@ ul {
 .header-div {
   display: flex;
   height: 100%;
-  margin: 0 auto;
   align-items: center;
   justify-content: space-between;
 }
@@ -142,6 +141,12 @@ ul {
 .address-link .list .etiket:hover,
 .address-link .list .etiket:focus {
   color: #404bbf;
+}
+
+.hamburger-bar{
+  display: none;
+  align-items: center;
+  justify-content: center;
 }
 
 .first-section-container {
@@ -243,22 +248,28 @@ ul {
 
 .section-ul {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 24px;
 }
 
 .section-ul .list.section-third-list {
   width: calc((100% - 48px) / 4);
-  box-shadow:  0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  box-shadow:  0px 1px 6px rgba(46, 47, 66, 0.08),
+  0px 1px 1px rgba(46, 47, 66, 0.16), 
+  0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .social-media-icons{
   display: flex;
   justify-content: center;
   gap: 24px;
+  margin-top: 10px;
 }
 
 .icons-footer{
   gap:16px;
+  margin: unset;
 }
 
 .social-media-icons-list{
@@ -436,6 +447,7 @@ ul {
 .embeded-form{
 display: flex;
 gap: 24px;
+margin-left: 20px;
 }
 
 
@@ -468,6 +480,7 @@ gap: 24px;
 
 .modal{
   position: fixed;
+  display: none;
   top: 0;
   left: 0;
   width: 100%;
