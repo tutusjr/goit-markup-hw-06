@@ -43,6 +43,9 @@ ul {
   margin: 0 auto;
   padding: 0 15px;
 }
+.responsive-menu{
+  display: none;
+}
 
 .home-navbar {
   background-color: #ffffff;
@@ -147,6 +150,7 @@ ul {
   display: none;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 .first-section-container {
@@ -393,13 +397,6 @@ ul {
   align-items: baseline;
 }
 .footer .logo {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #4d5ae5;
   display: inline-block;
   margin-bottom: 16px;
 }
@@ -420,11 +417,9 @@ ul {
   display: flex;
   align-items: baseline;
   justify-content: space-around;
+  gap: 50px;
 }
 
-.footer-logo-container{
-  margin-right:120px;
-}
 
 .footer-social .footer-social-text{
   font-weight: 500;
@@ -433,6 +428,11 @@ ul {
   letter-spacing: 0.02em;
   color: #FFFFFF;
   margin-bottom: 16px;
+}
+
+.footer-logo-and-social-container{
+  display: flex;
+  gap: 100px;
 }
 
 .embeded-text{
@@ -447,7 +447,6 @@ ul {
 .embeded-form{
 display: flex;
 gap: 24px;
-margin-left: 20px;
 }
 
 
@@ -463,6 +462,7 @@ margin-left: 20px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   color: #ffffff;
+  outline: none;
 }
 
 .label-input::placeholder{
@@ -504,6 +504,9 @@ margin-left: 20px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 72px 24px 24px 24px;
 }
+.is-open-modal{
+  display: block;
+}
 
 .modal-button{
   position: absolute;
@@ -512,8 +515,8 @@ margin-left: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   background-color: #E7E9FC;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -624,7 +627,6 @@ margin-left: 20px;
 
 }
 
-
 .modal-form-input:focus + .modal-form-icon{
   fill: #4D5AE5;
 }
@@ -667,3 +669,4 @@ margin-left: 20px;
 .svg-modal-button{
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
